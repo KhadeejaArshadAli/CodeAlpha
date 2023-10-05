@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Todo List App</title>
+   
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  </head>
+  <body>
+    <section class="container">
+      <div class="heading">
+        <img class="heading__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/laptop.svg">
+        <h1 class="heading__title">To-Do List</h1>
+       
+      </div>
+
+      <div class="task-input">
+     
+        <input type="text" placeholder="Today I need to.... ">
+       
+       <button id="submitButton" class="button"><span>Submit</span></button>
+     
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span class="active" id="all">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
+        </div>
+        <button class="clear-btn"><span>Clear All</span></button>
+      </div>
+      <ul class="task-box"></ul>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.1/dist/confetti.browser.min.js"></script>
+
+
+  </body>
+</html>
