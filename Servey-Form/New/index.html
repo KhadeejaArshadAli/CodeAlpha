@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Lavender Haze Survey Form</h1>
+          <p id="description" class="description text-center">
+            Thank you for taking the time to fill the form!
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Full Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="FirstName LastName"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="xyz@gmail.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Age</label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+              required/>
+          </div>
+          <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Gender</p>
+            <label>
+              <input
+                name="gender"
+                value="Male"
+                type="radio"
+                class="input-radio"
+                checked 
+              />Male</label
+            >
+            <label>
+              <input
+                name="gender"
+                value="Female"
+                type="radio"
+                class="input-radio"
+              />Female</label
+            >
+      
+            <label
+              ><input
+                name="gender"
+                value="Prefer Not To Say"
+                type="radio"
+                class="input-radio"
+              />Prefer Not To Say</label
+            >
+          </div>
+          
+      
+          <div class="form-group">
+            <p>
+              What would you like to become? (Check all that apply)
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="front-end-dev"
+                type="checkbox"
+                class="input-checkbox"
+              />Front-End Developer</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="back-end-dev"
+                type="checkbox"
+                class="input-checkbox"
+              />Back-End Developer</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="fullstack"
+                type="checkbox"
+                class="input-checkbox"
+              />Full Stack Developer</label
+            >
+   
+            <label><input
+                name="prefer"
+                value="data-science"
+                type="checkbox"
+                class="input-checkbox"
+              />Data Scientist</label
+            >
+            <label
+              ><input
+                name="Dev-Ops"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />Dev-Ops</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="sde"
+                type="checkbox"
+                class="input-checkbox"
+              />Software Engineer</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Blockchain"
+                type="checkbox"
+                class="input-checkbox"
+              />Blockchain Developer</label
+            >
+            
+            <label
+              ><input
+                name="prefer"
+                value="other"
+                type="checkbox"
+                class="input-checkbox"
+              />Other</label
+            >
+          </div>
+          <div class="form-group">
+            <p>
+              What would you like to Participate?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="Open Source">Open Source</option>
+              <option value="Fellowship">Fellowship</option>
+              <option value="community">Community Meetup</option>
+              <option value="hackathons">Hackathons</option>
+            </select>
+          </div>      
+          <div class="form-group">
+            <p>What would you like to tell us?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Message!"
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+
+</body>
+</html>
